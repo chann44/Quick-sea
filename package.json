@@ -1,0 +1,29 @@
+{
+  "name": "turborepo-starter",
+  "version": "0.0.1",
+  "private": true,
+  "author": "Thomas Taylor (https://thmsmtylr.com)",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "storybook": "turbo run storybook",
+    "build:storybook": "turbo run build:storybook",
+    "build:ui": "turbo run build:ui",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "next-link": "^2.0.0",
+    "prettier": "^2.5.1",
+    "react-dom": "^17.0.2",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": "16.x"
+  }
+}
